@@ -125,7 +125,7 @@
 
 .navbar.fixed .menu ion-icon {
 	margin-top: 22px;
-	color: white;
+	color: black;
 }
 /* akhir navbar */
 
@@ -152,6 +152,12 @@
 }
 
 .dark-mode .toggle-sun {
+	color: white;
+}
+
+
+.dark-mode .navbar.fixed .menu ion-icon {
+	margin-top: 22px;
 	color: white;
 }
 
