@@ -1,0 +1,731 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar {
+	width: 100%;
+	height: 120px;
+	position: fixed;
+	transition: 1s;
+	z-index: 100;
+}
+
+.navbar.fixed {
+	height: 70px;
+	background-color: olivedrab;
+}
+
+.navbar .nav-logo a {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 120px;
+	/*text-shadow: 8px 5px 1px white;*/
+	float: left;
+	margin-left: 40px;
+	transition: 1s;
+	color: olivedrab;
+}
+
+.navbar.fixed .nav-logo a {
+	line-height: 70px;
+	color: black;
+}
+
+.navbar .nav-items ul {
+	list-style: none;
+	float: right;
+	line-height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+	margin-right: 20px;
+}
+
+.navbar.fixed .nav-items ul {
+	line-height: 70px;
+}
+
+.navbar .nav-items ul li {
+	padding: 0px 25px 0px;
+	font-size: 16px;
+}
+
+.navbar .nav-items ul li a {
+	color: olivedrab;
+	font-weight: bold;
+}
+
+.navbar.fixed .nav-items ul li a {
+	color: black;
+}
+
+.navbar .nav-items ul li a:hover {
+	color: black;
+}
+
+.navbar.fixed .nav-items ul li a:hover {
+	color: white;
+}
+
+.toggle {
+	width: 45px;
+	height: 25px;
+	border-radius: 30px;
+	font-size: 16px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: olivedrab;
+	color: white;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.navbar.fixed .toggle {
+	background-color: black;
+}
+
+.circle {
+	width: 20px;
+	height: 20px;
+	transform: translateX(2px);
+	border-radius: 30px;
+	transition: 0.4s;
+	position: absolute;
+	background: white;
+}
+
+.dark-mode .circle {
+	transform: translateX(23px)
+}
+
+.toggle-moon, .toggle-sun {
+	width: 50%;
+}
+
+.navbar .menu {
+	display: none;
+}
+
+.navbar .menu ion-icon {
+	float: right;
+	font-size: 30px;
+	margin-top: 47px;
+	color: olivedrab;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.navbar.fixed .menu ion-icon {
+	margin-top: 22px;
+	color: black;
+}
+/* akhir navbar */
+
+/* dark mode */
+.dark-mode .navbar.fixed {
+	background-color: black;
+	color: white;
+}
+
+.dark-mode .navbar.fixed .toggle {
+	background-color: white;
+}
+
+.dark-mode .navbar.fixed .toggle .circle {
+	background-color: black;
+}
+
+.dark-mode .navbar .toggle .toggle-moon {
+	color: white;
+}
+
+.dark-mode .navbar.fixed .toggle .toggle-moon {
+	color: black;
+}
+
+.dark-mode .toggle-sun {
+	color: white;
+}
+
+.dark-mode .content-satu {
+	background-color: #000000c7;
+}
+
+.dark-mode .content-empat {
+	background-color: #000000c7;
+	color: white;
+}
+
+.dark-mode .navbar.fixed .nav-logo a,
+.dark-mode .navbar.fixed .nav-items ul li a,
+.dark-mode .content-satu .b-satu h4,
+.dark-mode .content-satu .b-satu h6 {
+	color: white;
+}
+
+.dark-mode .content-satu .b-satu .let {
+	background-color: white;
+	color: black;
+}
+
+.dark-mode .navbar .menu .material-symbols-outlined {
+	color: white;
+}
+
+.dark-mode .content-dua {
+	background-color: #201e1e;
+}
+
+.dark-mode .content-dua .skills .b-dua p,
+.dark-mode .content-dua h2,
+.dark-mode .content-dua h3 {
+	color: white;
+}
+
+.dark-mode .content-tiga .black h2,
+.dark-mode .content-tiga .black p {
+	color: white;
+}
+
+/* akhir dark mode */
+
+/* content satu */
+.content-satu {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding-top: 120px;
+	padding-bottom: 190px;
+	transition: 0.4s;
+}
+
+.content-satu .b-satu {
+	margin-right: 40px;
+	padding-top: 150px;
+}
+
+.content-satu .b-satu h4 {
+	font-size: 40px;
+	transition: 0.4s;
+}
+
+.content-satu .b-satu h5 {
+	color: olivedrab;
+	font-size: 20px;
+	transition: 0.4s;
+}
+
+.content-satu .b-satu h6 {
+	margin-top: 20px;
+	font-size: 18px;
+	align-items: justify;
+	transition: 0.4s;
+}
+
+.content-satu .b-satu .let {
+	cursor: pointer;
+	padding: 13px 50px 13px;
+	border-radius: 50px;
+	border: none;
+	background-color: black;
+	font-weight: bold;
+	margin-top: 20px;
+	color: white;
+	transition: 0.4s;
+}
+
+.content-satu .b-satu .cv {
+	cursor: pointer;
+	padding: 13px 50px 13px;
+	border-radius: 50px;
+	border: none;
+	background-color: olivedrab;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.content-satu .b-dua {
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.content-satu .b-dua .lingkaran {
+	width: 300px;
+	height: 300px;
+	background-image: url("../image/e3c0683b-b8cb-40ab-9193-288de2a8ef1f.jpg");
+	border: 4px solid  olivedrab;
+	border-radius: 50%;
+	background-position: -6px -10px;
+	background-size: 310px;
+}
+/* akhir content satu */
+
+/* content dua */
+.content-dua {
+	width: 100%;
+	background-color: whitesmoke;
+	padding-bottom: 80px;
+	transition: 0.4s;
+}
+
+.content-dua h2 {
+	padding-top: 80px;
+	margin-left: 40px;
+}
+
+.content-dua .su {
+	margin-left: 40px;
+	color: floralwhite;
+}
+
+.content-dua .hr {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 5px;
+	color: floralwhite;
+}
+
+.content-dua .skills {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.content-dua .skills .b-satu {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 50px;
+}
+
+.content-dua .skills .b-satu img {
+	width: 90%;
+	padding-bottom: 10px;
+}
+
+.content-dua .skills .b-dua {
+	margin-top: 50px;
+	margin-right: 40px;
+}
+
+.content-dua .skills .b-dua p {
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: justify;
+	font-size: 18px;
+}
+
+/* akhir content dua */
+
+/* content tiga */
+.content-tiga {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.content-tiga h2 {
+	padding-top: 80px;
+	margin-left: 40px;
+}
+
+.content-tiga hr {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 5px;
+}
+
+.content-tiga .black {
+	background-color: black;
+}
+
+.content-tiga .black h2 {
+	color: olivedrab;
+}
+
+.content-tiga .black p {
+	color: olivedrab;
+	padding-right: 40px;
+	margin-left: 40px;
+	margin-top: 20px;
+	text-align: justify;
+}
+
+.content-tiga .hijau {
+	background-color: olivedrab;
+}
+
+.content-tiga .hijau p {
+	color: black;
+	padding-right: 40px;
+	margin-left: 40px;
+	margin-top: 20px;
+	text-align: justify;
+}
+
+.content-tiga .icon {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.content-tiga .icon a {
+	color: black;
+}
+
+.content-tiga .icon ion-icon {
+	font-size: 15px;
+	padding: 10px 10px;
+	border: 0.1px solid black;
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-bottom: 80px;
+}
+
+.content-tiga .icon ion-icon:hover {
+	background-color: black;
+	color: white;
+}
+
+/* akhir content tiga */
+
+/* content empat */
+.content-empat {
+	width: 100%;
+	padding-bottom: 80px;
+	transition: 0.4s;
+}
+
+.content-empat h2 {
+	padding-top: 80px;
+	margin-left: 40px;
+}
+
+.content-empat hr {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 5px;
+}
+
+.pendidikan {
+	display: grid;
+	grid-template-columns: 33% auto 33%;
+	grid-gap: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+
+.pendidikan img {
+	width: 100%;
+	height: 40vh;
+}
+
+.pendidikan p {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.pendidikan button {
+	padding: 10px 20px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: olivedrab;
+	border: none;
+	border-radius: 5px;
+}
+
+.pendidikan button a {
+	color: black;
+	font-weight: bold;
+}
+/* content empat */
+
+/* footer */
+.footer {
+	width: 100%;
+	padding-bottom: 100px;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 33% auto 33%;
+}
+
+.footer h2 {
+	padding-top: 40px;
+	margin-left: 40px;
+	color: white;
+}
+
+.footer hr {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.footer a {
+	margin-left: 40px;
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.footer a:hover {
+	color: olivedrab;
+}
+
+/* akhir footer */
+
+/* sosial media */
+.hrr {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.sosial-media {
+	width: 100%;
+	background-color: black;
+	padding-bottom: 60px;
+}
+
+.sosial-media .icon {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.sosial-media .icon a {
+	color: white;
+}
+
+.sosial-media .icon ion-icon {
+	font-size: 15px;
+	padding: 10px 10px;
+	border: 0.1px solid white;
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.sosial-media .icon ion-icon:hover {
+	background-color: olivedrab;
+}
+
+.sosial-media .title {
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+}
+
+.sosial-media .title span {
+	color: olivedrab;
+}
+/* akhir sosial media */
+
+/* responsive */
+@media screen and (max-width:  1223px) {
+	.content-dua .b-dua .tools img {
+		height: 120px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+
+	.navbar .nav-logo a {
+		margin-left: 40px;
+	}
+
+	.navbar .nav-items ul {
+		background-color:  white;
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-right: 0px;
+	}
+
+	.dark-mode .navbar .nav-items ul {
+		background-color: #000000c7;
+	}
+
+	.dark-mode .navbar.fixed .nav-items ul {
+		background-color:  black;
+	}
+
+	.navbar.fixed .nav-items ul {
+		background-color:  olivedrab;
+	}
+
+	.navbar .nav-items ul {
+		transform: translateX(-120%);
+	}
+
+	.navbar .nav-items ul.active {
+		transform: translateX(0%);
+	}
+
+	/*.navbar .menu .material-symbols-outlined {
+		display: flex;
+		justify-content: flex-end;
+	}*/
+
+	.navbar .menu {
+		margin-right: 40px;
+	}
+
+	.content-satu .b-satu .cv {
+		margin-left: 0px;
+	}
+
+	.content-dua {
+		padding-bottom: 50px;
+	}
+
+	.content-dua .skills {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	.content-dua .skills .b-dua {
+		margin-left: 40px;
+		margin-right: 20px;
+	}
+
+	.content-dua .skills .b-dua p {
+		margin-left: 0px;
+	}
+
+	.content-empat .pendidikan {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-gap: 20px;
+		margin-top: 0px;
+	}
+
+	.pendidikan img {
+		width: 95%;
+		margin-top: 50px;
+	}
+
+	.toggle {
+		margin-left: 0px;
+		margin-bottom: 30px;
+		margin-top: 20px;
+		float: right;
+	}
+
+	.navbar .menu {
+		position: absolute;
+		right: 20px;
+		display: flex;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.content-satu {
+		display: grid;
+		grid-template-columns: 100%;
+		padding-top: 20px;
+		padding-bottom: 60px;
+		text-align: center;
+	}
+
+	.content-satu .b-satu {
+		margin-left: 20px;
+		padding-top: 50px;
+		margin-right: 20px;
+	}
+
+	.content-dua .b-dua .tools img {
+		width: 50%;
+		height: 100px;
+	}
+
+	.content-dua .skills .b-satu {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-gap: 15px;
+	}
+
+	.content-dua .skills .b-satu img {
+		width: 90%;
+		padding-bottom: 10px;
+	}
+
+	.content-dua .skills .b-dua hr {
+		margin-right: 20px;
+	}
+
+	.content-tiga {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	.content-tiga .black p {
+		padding-bottom: 80px;
+	}
+
+	.content-empat .pendidikan {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	.pendidikan img {
+		width: 100%;
+		height: 50vh;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+}
+
+@media screen and (max-width: 382px) {
+
+	.navbar .nav-logo a {
+		margin-left: 20px;
+	}
+
+	.navbar .menu {
+		margin-right: 20px;
+	}
+
+	.content-satu .b-dua .lingkaran {
+		width: 150px;
+		height: 150px;
+		border: 2px solid olivedrab;
+		background-position: -2px -10px;
+		background-size: 160px;
+	}
+
+	.content-satu .b-satu h4 {
+		font-size: 25px;
+	}
+
+	.content-satu .b-satu h5 {
+		color: olivedrab;
+		font-size: 15px;
+	}
+
+	.content-satu .b-satu h6 {
+		margin-top: 20px;
+		font-size: 14px;
+		align-items: justify;
+	}
+
+	.pendidikan img {
+		height: 20vh;
+	}
+
+}
