@@ -84,8 +84,7 @@
 	cursor: pointer;
 	background-color: olivedrab;
 	color: white;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-right: -10px;
 }
 
 .navbar.fixed .toggle {
@@ -152,11 +151,6 @@
 }
 
 .dark-mode .toggle-sun {
-	color: white;
-}
-
-
-.dark-mode .navbar.fixed .menu ion-icon {
 	color: white;
 }
 
@@ -309,7 +303,7 @@
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	margin-left: 40px;
-	margin-right: 40px;
+	margin-right: 20px;
 	margin-top: 50px;
 }
 
@@ -325,7 +319,7 @@
 
 .content-dua .skills .b-dua p {
 	margin-left: 40px;
-	margin-right: 40px;
+	margin-right: 20px;
 	text-align: justify;
 	font-size: 18px;
 }
@@ -392,7 +386,8 @@
 	padding: 10px 10px;
 	border: 0.1px solid black;
 	border-radius: 50%;
-	margin-right: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
 	margin-bottom: 80px;
 }
 
@@ -516,7 +511,8 @@
 	padding: 10px 10px;
 	border: 0.1px solid white;
 	border-radius: 50%;
-	margin-right: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
 	margin-bottom: 10px;
 }
 
@@ -576,11 +572,6 @@
 		transform: translateX(0%);
 	}
 
-	/*.navbar .menu .material-symbols-outlined {
-		display: flex;
-		justify-content: flex-end;
-	}*/
-
 	.navbar .menu {
 		margin-right: 40px;
 	}
@@ -628,8 +619,9 @@
 
 	.navbar .menu {
 		position: absolute;
-		right: 20px;
+		right: 0px;
 		display: flex;
+		margin-right: 30px;
 	}
 
 }
@@ -658,7 +650,8 @@
 	.content-dua .skills .b-satu {
 		display: grid;
 		grid-template-columns: 50% 50%;
-		grid-gap: 15px;
+		grid-gap: 5px;
+		margin-right: 40px;
 	}
 
 	.content-dua .skills .b-satu img {
@@ -698,14 +691,6 @@
 
 @media screen and (max-width: 382px) {
 
-	.navbar .nav-logo a {
-		margin-left: 20px;
-	}
-
-	.navbar .menu {
-		margin-right: 20px;
-	}
-
 	.content-satu .b-dua .lingkaran {
 		width: 150px;
 		height: 150px;
@@ -727,6 +712,10 @@
 		margin-top: 20px;
 		font-size: 14px;
 		align-items: justify;
+	}
+
+	.content-dua .skills .b-dua p {
+		margin-right: 20px;
 	}
 
 	.pendidikan img {
