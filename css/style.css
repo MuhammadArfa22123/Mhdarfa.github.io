@@ -176,7 +176,7 @@
 	color: black;
 }
 
-.dark-mode .navbar .menu .material-symbols-outlined {
+.dark-mode .navbar.fixed .menu ion-icon {
 	color: white;
 }
 
